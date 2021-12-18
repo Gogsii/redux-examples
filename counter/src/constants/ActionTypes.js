@@ -1,0 +1,5 @@
+export const INCREMENT = 'INCREMENT';
+export const DECREMENT = 'DECREMENT';
+
+export const INCREMENT_BY_TWO = 'INCREMENT_BY_TWO';
+export const DECREMENT_BY_TWO = 'DECREMENT_BY_TWO';
