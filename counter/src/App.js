@@ -4,7 +4,7 @@ import './App.css';
 import Counter from './components/Counter';
 import { connect } from 'react-redux';
 
-const App = ({count, increment, decrement, incrementByTwo, decrementByTwo}) => {
+const App = ({count}) => {
 
   return (
     <div className="App">
@@ -15,10 +15,6 @@ const App = ({count, increment, decrement, incrementByTwo, decrementByTwo}) => {
       <body>
         <Counter 
           count={count}
-          increment={increment}
-          decrement={decrement}
-          incrementByTwo={incrementByTwo}
-          decrementByTwo={decrementByTwo}
         />
       </body>
     </div>
@@ -26,7 +22,9 @@ const App = ({count, increment, decrement, incrementByTwo, decrementByTwo}) => {
 }
 
 function mapStateToProps(state) {
-  return { count: state }
+  return { 
+    count: state 
+  }
 }
 
 export default connect(mapStateToProps, null)(App)

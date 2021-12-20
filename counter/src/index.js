@@ -11,13 +11,7 @@ const store = createStore(reducer);
 ReactDOM.render(
   <React.StrictMode>
     <Provider store={store}>
-      <App 
-        // Object shorthand form
-        // increment={() => store.dispatch(increment(1))}
-        // decrement={() => store.dispatch(decrement(1))}
-        // incrementByTwo={() => store.dispatch(incrementByTwo(2))}
-        // decrementByTwo={() => store.dispatch(decrementByTwo(2))}
-      />
+      <App/>
     </Provider>
   </React.StrictMode>,
   document.getElementById('root')
