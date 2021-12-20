@@ -23,7 +23,7 @@ const App = ({count}) => {
 
 function mapStateToProps(state) {
   return { 
-    count: state 
+    count: state.value
   }
 }
 
